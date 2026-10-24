@@ -7,7 +7,8 @@ import {
   Maximize2, 
   Compass, 
   Mail, 
-  Sliders
+  Sliders,
+  BookOpen
 } from 'lucide-react';
 import type { SceneId } from '../types';
 import { SCENES } from '../data/scenes';
@@ -19,6 +20,7 @@ interface NavbarProps {
   onOpenGame: () => void;
   onOpenCareKit: () => void;
   onOpenLetter: () => void;
+  onOpenStory?: () => void;
   isZenMode: boolean;
   onToggleZenMode: () => void;
 }
@@ -29,6 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenGame,
   onOpenCareKit,
   onOpenLetter,
+  onOpenStory,
   isZenMode,
   onToggleZenMode
 }) => {
@@ -88,6 +91,19 @@ export const Navbar: React.FC<NavbarProps> = ({
             <Mail className="w-3.5 h-3.5 text-pink-400" />
             <span className="hidden sm:inline">A Note for You</span>
           </button>
+
+          {onOpenStory && (
+            <button
+              onClick={() => {
+                soundEngine.playPop();
+                onOpenStory();
+              }}
+              className="bg-black/40 hover:bg-black/60 px-3 py-2 rounded-2xl border border-amber-400/30 hover:border-amber-400/60 text-amber-200 text-xs font-semibold flex items-center gap-1.5 transition shadow-lg backdrop-blur-md cursor-pointer"
+            >
+              <BookOpen className="w-3.5 h-3.5 text-amber-400" />
+              <span className="hidden sm:inline">Backstory Comic</span>
+            </button>
+          )}
         </div>
 
         {/* Center: Explore Another Sanctuary */}

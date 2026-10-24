@@ -106,6 +106,7 @@ export const App: React.FC = () => {
         {isLanding ? (
           <LandingHero 
             onSelectMood={handleSelectMood}
+            onEnterScene={handleEnterWorld}
             onOpenGame={() => setShowGame(true)}
             onOpenCareKit={() => setShowCareKit(true)}
             onOpenLetter={() => setShowLetter(true)}
@@ -119,6 +120,7 @@ export const App: React.FC = () => {
               onOpenGame={() => setShowGame(true)}
               onOpenCareKit={() => setShowCareKit(true)}
               onOpenLetter={() => setShowLetter(true)}
+              onOpenStory={() => setStorySceneId(currentSceneId)}
               isZenMode={isZenMode}
               onToggleZenMode={() => setIsZenMode(prev => !prev)}
             />

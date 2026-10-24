@@ -45,4 +45,6 @@ your_instagram_activity/
 messages/
 *.html.bak
 tmp/
+.playwright-mcp/
+scratch/
 

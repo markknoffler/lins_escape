@@ -33,53 +33,53 @@ export const ScrollStoryModal: React.FC<ScrollStoryModalProps> = ({
     acts: { actNumber: number; title: string; image: string }[];
   }> = {
     cafe: {
-      title: 'Cozy CLOY Café',
+      title: 'Cozy CLOY & Goblin Café',
       tag: 'ORIGIN STORY',
       acts: [
-        { actNumber: 1, title: 'Act I: The 2 AM Hostel Fatigue', image: '/assets/comics/scene_1_comic/scene_1.1.png' },
-        { actNumber: 2, title: 'Act II: The Secret Escape Portal', image: '/assets/comics/scene_1_comic/scene_1.2.png' },
-        { actNumber: 3, title: 'Act III: The Rainy Window Table', image: '/assets/comics/scene_1_comic/scene_1.3.png' },
-        { actNumber: 4, title: 'Act IV: Resting with the Warm Hearth', image: '/assets/comics/scene_1_comic/scene_1.4.png' }
+        { actNumber: 1, title: 'Act I: The 2:30 AM Medico Freeze', image: '/assets/comics/scene_1_comic/scene_1.1.png' },
+        { actNumber: 2, title: 'Act II: The K-Drama Warmth Sanctuary', image: '/assets/comics/scene_1_comic/scene_1.2.png' },
+        { actNumber: 3, title: 'Act III: The 50₹ Momos & Warm Brew Promise', image: '/assets/comics/scene_1_comic/scene_1.3.png' },
+        { actNumber: 4, title: 'Act IV: Boarding for the Rainy CLOY Café', image: '/assets/comics/scene_1_comic/scene_1.4.png' }
       ]
     },
     beach: {
-      title: 'Sunset Beach & White Beach',
+      title: 'Sunset Ocean Shore',
       tag: 'SECRET VACATION',
       acts: [
-        { actNumber: 1, title: 'Act I: Overwhelmed by Studio Noise', image: '/assets/comics/scene_2_comic/scene_2.1.png' },
-        { actNumber: 2, title: 'Act II: The Secret Philippines Ticket', image: '/assets/comics/scene_2_comic/scene_2.2.png' },
+        { actNumber: 1, title: 'Act I: Hospital Ward Duty Exhaustion', image: '/assets/comics/scene_2_comic/scene_2.1.png' },
+        { actNumber: 2, title: 'Act II: Longing for Coastal Waves & Calm', image: '/assets/comics/scene_2_comic/scene_2.2.png' },
         { actNumber: 3, title: 'Act III: Folding Worries into Origami Boats', image: '/assets/comics/scene_2_comic/scene_2.3.png' },
-        { actNumber: 4, title: 'Act IV: Golden Waves & Salty Air', image: '/assets/comics/scene_2_comic/scene_2.4.png' }
+        { actNumber: 4, title: 'Act IV: Golden Waves & Salty Ocean Air', image: '/assets/comics/scene_2_comic/scene_2.4.png' }
       ]
     },
     mountains: {
-      title: 'Arunachal Starlit Peak',
+      title: 'Umrangso & Karbi Starlit Peak',
       tag: 'HOME CONNECTION',
       acts: [
-        { actNumber: 1, title: 'Act I: Missing the Northeast Mountain Air', image: '/assets/comics/scene_3_comics/scene_3.1.png' },
-        { actNumber: 2, title: 'Act II: The Sacred Mountain Path', image: '/assets/comics/scene_3_comics/scene_3.2.png' },
-        { actNumber: 3, title: 'Act III: Campfire under the Green Aurora', image: '/assets/comics/scene_3_comics/scene_3.3.png' },
-        { actNumber: 4, title: 'Act IV: The Blessing of the Sacred Mithun', image: '/assets/comics/scene_3_comics/scene_3.4.png' }
+        { actNumber: 1, title: 'Act I: Missing the Karbi Pine Breeze', image: '/assets/comics/scene_3_comics/scene_3.1.png' },
+        { actNumber: 2, title: 'Act II: The Umrangso Road Trip Bet', image: '/assets/comics/scene_3_comics/scene_3.2.png' },
+        { actNumber: 3, title: 'Act III: Starlit Campfire by Umrangso Lake', image: '/assets/comics/scene_3_comics/scene_3.3.png' },
+        { actNumber: 4, title: 'Act IV: Mountain Serenity Found', image: '/assets/comics/scene_3_comics/scene_3.4.png' }
       ]
     },
     night_city: {
       title: 'Midnight Neon Seoul',
       tag: 'LO-FI ESCAPE',
       acts: [
-        { actNumber: 1, title: 'Act I: Surviving the 11 PM Curfew Rush', image: '/assets/comics/scene_4_comic/scene_4.1.png' },
-        { actNumber: 2, title: 'Act II: Headphones On, World Off', image: '/assets/comics/scene_4_comic/scene_4.2.png' },
-        { actNumber: 3, title: 'Act III: Steaming Midnight Ramyeon', image: '/assets/comics/scene_4_comic/scene_4.3.png' },
-        { actNumber: 4, title: 'Act IV: Neon Reflections & Quiet Beats', image: '/assets/comics/scene_4_comic/scene_4.4.png' }
+        { actNumber: 1, title: 'Act I: The Hostel Mess Food Tragedy', image: '/assets/comics/scene_4_comic/scene_4.1.png' },
+        { actNumber: 2, title: 'Act II: The 11 PM Gate Lockdown', image: '/assets/comics/scene_4_comic/scene_4.2.png' },
+        { actNumber: 3, title: 'Act III: Late-Night Lo-Fi & Spotify Sync', image: '/assets/comics/scene_4_comic/scene_4.3.png' },
+        { actNumber: 4, title: 'Act IV: Midnight Momos & Steaming Broth', image: '/assets/comics/scene_4_comic/scene_4.4.png' }
       ]
     },
     blossom_meadow: {
-      title: 'Ghibli Blossom Meadow',
+      title: 'Blossom & Melody Meadow',
       tag: 'CREATIVE RESET',
       acts: [
-        { actNumber: 1, title: 'Act I: Staring at a Blank Sketchbook', image: '/assets/comics/scene_5_comic/scene_5.1.png' },
-        { actNumber: 2, title: 'Act II: Stepping into the Ghibli Hills', image: '/assets/comics/scene_5_comic/scene_5.2.png' },
-        { actNumber: 3, title: 'Act III: The Blooming Mathematical Garden', image: '/assets/comics/scene_5_comic/scene_5.3.png' },
-        { actNumber: 4, title: 'Act IV: Inspiration Returns with Petals', image: '/assets/comics/scene_5_comic/scene_5.4.png' }
+        { actNumber: 1, title: 'Act I: The Silenced Melody & Heartbreak', image: '/assets/comics/scene_5_comic/scene_5.1.png' },
+        { actNumber: 2, title: 'Act II: Crafting with Heart & Red Yarn', image: '/assets/comics/scene_5_comic/scene_5.2.png' },
+        { actNumber: 3, title: 'Act III: Samreedh’s 11/10 Encouragement', image: '/assets/comics/scene_5_comic/scene_5.3.png' },
+        { actNumber: 4, title: 'Act IV: Singing in the Cherry Blossom Meadow', image: '/assets/comics/scene_5_comic/scene_5.4.png' }
       ]
     }
   };

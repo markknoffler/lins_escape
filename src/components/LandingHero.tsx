@@ -20,6 +20,7 @@ import { getAssetUrl } from '../utils/assets';
 
 interface LandingHeroProps {
   onSelectMood: (mood: MoodType) => void;
+  onEnterScene?: (sceneId: SceneId) => void;
   onOpenGame?: () => void;
   onOpenCareKit?: () => void;
   onOpenLetter?: () => void;
@@ -27,7 +28,8 @@ interface LandingHeroProps {
 }
 
 export const LandingHero: React.FC<LandingHeroProps> = ({ 
-  onSelectMood,
+  onSelectMood: _,
+  onEnterScene,
   onOpenGame,
   onOpenCareKit,
   onOpenLetter,
@@ -142,7 +144,6 @@ export const LandingHero: React.FC<LandingHeroProps> = ({
   const handleMoodSelect = (mood: typeof moods[0]) => {
     soundEngine.playChime();
     setSelectedMoodId(mood.id);
-    onSelectMood(mood.id);
     setJourneyStep(3);
   };
 
@@ -423,6 +424,16 @@ export const LandingHero: React.FC<LandingHeroProps> = ({
                         >
                           <BookOpen className="w-4 h-4 text-amber-300" />
                           <span>Read Pre-Story & Enter ✨</span>
+                        </button>
+
+                        <button
+                          onClick={() => {
+                            soundEngine.playChime();
+                            if (onEnterScene) onEnterScene(world.id);
+                          }}
+                          className="w-full mt-2 py-1 text-[11px] text-white/50 hover:text-white/90 text-center transition cursor-pointer"
+                        >
+                          or step inside directly ➔
                         </button>
                       </div>
                     </motion.div>
